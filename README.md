@@ -1,19 +1,13 @@
 # Plano de Teste
 
-**nome do sistema**
+**e-Zoop**
 
-*versão x.x*
-
-## Histórico das alterações
-
-   Data    | Versão |    Descrição   | Autor(a)
------------|--------|----------------|-----------------
-dd/mm/aaaa |  x.x   | Release incial | Danielle Farias
+*versão 1.0*
 
 
 ## 1 - Introdução
 
-Este documento descreve os requisitos a testar, os  tipos de testes definidos para cada iteração, os recursos de hardware e software a serem empregados e o cronograma dos testes ao longo do projeto. As seções referentes aos requisitos, recursos e cronograma servem para permitir ao gerente do projeto acompanhar a evolução dos testes.
+Este documento descreve os requisitos a testar, os  tipos de testes definidos para cada iteração e o cronograma dos testes ao longo do projeto. As seções referentes aos requisitos, recursos e cronograma servem para permitir ao gerente do projeto acompanhar a evolução dos testes.
 
 Com esse documento, você deve:
 - Identificar informações de projeto existentes e os componentes de software que devem ser testados.
@@ -26,11 +20,78 @@ Também é possível apresentar aqui o programa que será testado.
 
 ## 2 - Requisitos a Testar
 
-Esta seção deve conter os casos de uso e requisitos não funcionais identificados como objetos dos testes ao longo do desenvolvimento do projeto.
-Como, em geral, os requisitos a testar são obtidos diretamente dos requisitos do sistema, esta seção é concebida como opcional. Assim sendo, sempre que novos requisitos a testar, que não constem como requisitos do sistema, forem identificados ou, simplesmente, por questões de organização e clareza, esta seção deve ser preenchida.
-Dependendo das informações disponíveis, essa seção pode começar a ser preenchida já nas primeiras iterações do ciclo de vida a partir do documento de requisitos.
+1 - Cadastro de Usuário:
+* Verificar se o cadastro de usuário é realizado com sucesso, com todos os campos preenchidos corretamente.
+* Verificar se é possível cadastrar usuários com informações inválidas ou em branco e se esses casos estão sendo tratados corretamente.
+* Verificar se o sistema envia um e-mail de confirmação de cadastro para o usuário.
 
-Caso seja necessário, liste aqui os requisitos a testar subdivididos em casos de uso e requisitos não-funcionais.
+2 - Login:
+* Verificar se o login está funcionando corretamente, permitindo o acesso apenas a usuários cadastrados e com as credenciais corretas.
+* Verificar se o login apresenta mensagem de erro caso o usuário insira informações incorretas.
+* Verificar se há um link para redefinir a senha caso o usuário a esqueça.
+
+3 - Pesquisa de Produtos:
+* Verificar se a pesquisa de produtos está retornando os resultados corretos de acordo com as palavras-chave inseridas.
+* Verificar se a pesquisa está funcionando corretamente mesmo com caracteres especiais ou em outras línguas.
+* Verificar se o sistema oferece sugestões de produtos para o usuário.
+
+4 - Página do Produto:
+* Verificar se as informações do produto estão sendo exibidas corretamente, como preço, imagem e descrição.
+* Verificar se é possível adicionar o produto ao carrinho de compras.
+* Verificar se é possível avaliar o produto e visualizar as avaliações de outros usuários.
+
+5 - Carrinho de Compras:
+* Verificar se o carrinho de compras exibe todos os produtos adicionados pelo usuário.
+* Verificar se é possível modificar a quantidade ou remover produtos do carrinho.
+* Verificar se o carrinho de compras exibe o valor total dos produtos adicionados.
+
+6 - Finalização da Compra:
+* Verificar se a finalização da compra está sendo realizada corretamente, com as informações de pagamento e entrega sendo registradas corretamente.
+* Verificar se é possível finalizar a compra com informações inválidas ou em branco e se esses casos estão sendo tratados corretamente.
+* Verificar se o usuário recebe uma confirmação de compra por e-mail.
+
+7 - Integração com Meios de Pagamento:
+* Verificar se a integração com os meios de pagamento está funcionando corretamente, permitindo o processamento das transações de compra.
+* Verificar se são aceitos os principais meios de pagamento utilizados pelos clientes.
+* Verificar se as informações de pagamento são armazenadas de forma segura.
+
+8 - Rastreamento de Pedidos:
+* Verificar se o usuário pode visualizar o status do pedido em tempo real.
+* Verificar se o usuário recebe uma notificação por e-mail ou mensagem de texto quando o status do pedido é alterado.
+* Verificar se o sistema fornece informações sobre a transportadora e o número de rastreamento do pedido.
+
+9 - Atendimento ao Cliente:
+* Verificar se há um canal de atendimento ao cliente disponível para os usuários.
+* Verificar se o sistema oferece suporte por chat ou e-mail.
+* Verificar se as informações de contato do atendimento ao cliente são claras e fáceis de encontrar.
+
+10 - Teste de Carga:
+* Verificar se o site é capaz de suportar uma grande quantidade de usuários simultâneos sem apresentar lentidão ou falhas.
+* Verificar se o site é capaz de suport
+* Verificar se o site é capaz de suportar picos de tráfego durante promoções ou períodos de alta demanda.
+* Verificar se o tempo de resposta do site é aceitável para os usuários em diferentes regiões geográficas.
+* Verificar se o site é capaz de lidar com múltiplas transações simultâneas sem apresentar erros ou perda de informações.
+
+11 - Teste de Segurança:
+* Verificar se o site utiliza criptografia SSL para proteger as informações dos usuários durante a navegação.
+* Verificar se o site está em conformidade com as normas de segurança de dados, como a GDPR ou a Lei Geral de Proteção de Dados.
+* Verificar se o site é capaz de lidar com tentativas de invasão ou ataques de hackers sem comprometer as informações dos usuários.
+
+12 - Teste de Navegabilidade:
+* Verificar se o site é fácil de navegar e encontrar informações relevantes.
+* Verificar se o site possui uma interface amigável e intuitiva para os usuários.
+* Verificar se o site é responsivo, ou seja, se é capaz de se adaptar a diferentes dispositivos e tamanhos de tela.
+
+13 - Teste de Usabilidade:
+* Verificar se o site oferece uma experiência de usuário satisfatória e sem frustrações.
+* Verificar se as funcionalidades do site são fáceis de usar e entender pelos usuários.
+* Verificar se o site possui uma boa usabilidade em diferentes dispositivos e navegadores.
+
+14 - Teste de Compatibilidade:
+* Verificar se o site é compatível com diferentes navegadores, como Chrome, Firefox, Safari e Edge.
+* Verificar se o site é compatível com diferentes sistemas operacionais, como Windows, Mac, Android e iOS.
+* Verificar se o site é compatível com diferentes dispositivos, como desktops, laptops, smartphones e tablets.
+
 
 ### Casos de uso:
 
@@ -59,7 +120,7 @@ Com base no guia de testes, indique os tipos de testes que melhor se adéquam ao
 - Teste de stress;
 - Teste de segurança e controle de acesso;
 - Teste de instalação;
-- Entre outros.
+
 
 ### 3.1 - Métodos da Classe 
 

@@ -51,10 +51,6 @@ As seguintes ferramentas de automação serão utilizadas para executar os teste
    - Verificar se a ordenação dos resultados está correta de acordo com os critérios selecionados.
    - Verificar se a paginação está funcionando corretamente ao navegar pelos resultados da pesquisa.
 
-6. Teste de Carga com JMeter
-   - Configurar um teste de carga utilizando o Apache JMeter para simular múltiplos usuários acessando o sistema de forma simultânea.
-   - Verificar se o sistema lida adequadamente com a carga de usuários, mantendo a estabilidade e o desempenho.
-   - Monitorar métricas de desempenho, como tempo de resposta, taxa de erro e capacidade de processamento.
 
 ### Ambiente de Teste
 O ambiente de teste deve ser configurado com as seguintes características:
